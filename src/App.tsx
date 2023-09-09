@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import CustomBtn from './component/CustomBtn';
-import { getRandomLetter, generateName, generateNameWithLength } from './nameGener';
+import { generateName, generateNameWithLength } from './nameGener';
 import letters from './component/letters'
 import GenerBtn from './component/GenerBtn';
 

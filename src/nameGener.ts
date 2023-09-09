@@ -1,4 +1,3 @@
-import letters from "./component/letters"
 // nameGenerator.ts
 export const getRandomLetter = (letters: string[]): string => {
     const randomIndex = Math.floor(Math.random() * letters.length);
