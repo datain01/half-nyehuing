@@ -3,6 +3,7 @@ import './App.css';
 import CustomBtn from './component/CustomBtn';
 import { getRandomLetter, generateName, generateNameWithLength } from './nameGener';
 import letters from './component/letters'
+import GenerBtn from './component/GenerBtn';
 
 type Position = 'front' | 'back' | 'random';
 
@@ -51,23 +52,21 @@ const generateLongName = () => {
         </div>
       </div>
       <div className="columns is-flex is-justify-content-center">
-        <div className="column is-narrow">
-          <button className='button is-primary is-outlined' onClick={handleGenerateName}>녜힁 제조</button>
-        </div>
-        <div className="column is-narrow">
-          <button className='button is-primary is-outlined' onClick={generateThreeLetterName}>세글자 녜힁</button>
-        </div>
-        <div className="column is-narrow">
-          <button className='button is-primary is-outlined' onClick={generateLongName}>긴 녜힁</button>
+        <div className="columns is-flex is-justify-content-center">
+          <GenerBtn label="녜힁 제조" onClick={handleGenerateName} />
+          <GenerBtn label="세글자 녜힁" onClick={generateThreeLetterName} />
+          <GenerBtn label="긴 녜힁" onClick={generateLongName} />
         </div>
       </div>
     </div>
-
-
-        <div className="card">
-          <div className="card-content">
-            <div className="content">
-            생성된 녜힁: {generatedName}
+        <div className='columns is-justify-content-center'>
+          <div className='column is-three-quarters'>
+            <div className="card mt-5 ">
+              <div className="card-content">
+                <div className="content is-size-5">
+                생성된 녜힁: <strong>{generatedName}</strong>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -95,7 +94,7 @@ function App() {
       <footer className="footer">
         <div className="content has-text-centered">
           <p>
-            <strong>Partially Random Nickname Generator for Maplestory ver1.1</strong> by datain updated at 230910
+            <strong>Partially Random Nickname Generator for Maplestory ver1.1</strong> <br/>by datain updated at 230910
             <div>
               contact: mystrange01@gmail.com
             </div>
