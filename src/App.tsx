@@ -51,7 +51,7 @@ const generateLongName = () => {
           />
         </div>
       </div>
-      <div className="columns is-flex is-justify-content-center">
+      <div className="columns is-flex is-justify-content-center mt-1">
         <div className="columns is-flex is-justify-content-center">
           <GenerBtn label="녜힁 제조" onClick={handleGenerateName} />
           <GenerBtn label="세글자 녜힁" onClick={generateThreeLetterName} />
